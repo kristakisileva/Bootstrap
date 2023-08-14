@@ -1,0 +1,14 @@
+HTML {
+    height: 100%;
+}
+
+BODY {
+    min-height: 100%;
+    background-image: url("bg1.jpg");
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+header {
+    background-color: aqua;
+}

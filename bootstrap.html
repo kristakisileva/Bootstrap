@@ -5,7 +5,8 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bs.js">
+    <link rel="stylesheet" href="bs.css">
     <title>Bootstrap uzdevums</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -19,20 +20,19 @@
 </head>
 <header>
     <nav class="navbar">
-        <h3>Bootstrap uzdevumi</h3>>
         <a class="navbar-brand" href="https://github.com/ausmoons/Bootstrap">Github</a>
     </nav>
 </header>
 
 <body>
     <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"></iframe>
     </div>
     <br>
     <br>
     <br>
-    <div id="tabula" class="container" style="display: flex; flex-direction:row;">
-        <div class="card-body text-center card" style="width: 18rem">
+    <div id="tabula" class="container" style="display:flex; flex-direction:row;">
+        <div class="card-body text-center card" style="width: 18rem" position="center">
             <h3>Vasara</h3>
             <p>Lorem ipsum dolor..</p>
             <img src="Photo/vasara.jpg" height="150" width="200">
@@ -53,26 +53,14 @@
     <br>
     <br>
     <br>
-    <div class="row">
-        <div class="col-md">
-            <img src="Photo/dālijas.jpg" width="100%" height="100%">
-        </div>
-        <div class="col-md">
-            <img src="Photo/frēzijas.jpg" width="100%" height="100%">
-        </div>
-        <div class="col-md">
-            <img src="Photo/neļķes.jpg" width="100%" height="100%">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md">
-            <img src="Photo/rozes.jpg" width="100%" height="100%">
-        </div>
-        <div class="col-md">
-            <img src="Photo/saulespuķes.jpg" width="100%" height="100%">
-        </div>
-        <div class="col-md">
-            <img src="Photo/tulpes.jpg" width="100%" height="100%">
+    <div class="container">
+        <div class="row align-content-center">
+            <img class="col-lg-4 col-md-5 col-sm-12" src="Photo/dālijas.jpg">
+            <img class="col-lg-4 col-md-5 col-sm-12" src="Photo/frēzijas.jpg">
+            <img class="col-lg-4 col-md-5 col-sm-12" src="Photo/neļķes.jpg">
+            <img class="col-lg-4 col-md-5 col-sm-12" src="Photo/rozes.jpg">
+            <img class="col-lg-4 col-md-5 col-sm-12" src="Photo/saulespuķes.jpg">
+            <img class="col-lg-4 col-md-5 col-sm-12" src="Photo/tulpes.jpg">
         </div>
     </div>
     <br>
@@ -80,7 +68,7 @@
     <br>
     <br>
     <div class="container">
-        <table class="table table-bordered" style="text-align: center;">
+        <table class="table table-bordered" style="text-align: center; border-style: double;">
             <tbody>
                 <tr>
                     <td>Viens</td>
@@ -104,110 +92,80 @@
     <br>
     <br>
     <br>
-    <div class="table-responsive">
-        <table class="table table-bordered" style="text-align: center;">
-            <tr>
-                <td>Viens</td>
-                <td>Divi</td>
-                <td>Trīs</td>
-            </tr>
-            <tr>
-                <td>Četri</td>
-                <td>Pieci</td>
-                <td>Seši</td>
-            </tr>
-            <tr>
-                <td>Septiņi</td>
-                <td>Astoņi</td>
-                <td>Deviņi</td>
-            </tr>
-        </table>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="container">
-        <h2>Carousel</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <button type="button" data-bs-target="#demo-btn" data-bs-toggle="collapse" class="btn btn-primary m-1">
+        Carousel</button>
+    <div id="demo-btn" class="carousel show">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Photo/vasara.jpg" alt="vasara" class="d-block carousel-img">
+                <div class="carousel-item">
+                    <img src="Photo/R.jpg" alt="rudens" class="d-block carousel-img">
                 </div>
-
-                <div class="item">
-                    <img src="chicago.jpg" alt="Chicago" style="width:100%;">
-                </div>
-
-                <div class="item">
-                    <img src="ny.jpg" alt="New york" style="width:100%;">
+                <div class="carousel-item">
+                    <img src="Photo/pavasaris.jpg" alt="pavasaris" class="d-block carousel-img">
                 </div>
             </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-        <div class="opacity-100">
-            <h1>100</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="opacity-100">
+                <h1>100</h1>
+            </div>
+            <div class="opacity-75">
+                <h1>75</h1>
+            </div>
+            <div class="opacity-50">
+                <h1>50</h1>
+            </div>
+            <div class="opacity-25">
+                <h1>25</h1>
+            </div>
+            <div class="opacity-0">
+                <h1>0</h1>
+            </div>
         </div>
-        <div class="opacity-75">
-            <h1>75</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="bg-success p-2 text-white">This is default success background</div>
+            <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
+            <div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background</div>
+            <div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background</div>
+            <div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background</div>
         </div>
-        <div class="opacity-50">
-            <h1>50</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <h2>Simple Collapsible</h2>
+            <p>Click on the button to toggle between showing and hiding content.</p>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Simple
+                collapsible</button>
+            <div id="demo2" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
         </div>
-        <div class="opacity-25">
-            <h1>25</h1>
-        </div>
-        <div class="opacity-0">
-            <h1>0</h1>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-        <div class="bg-success p-2 text-white">This is default success background</div>
-        <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
-        <div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background</div>
-        <div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background</div>
-        <div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background</div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <button data-toggle="collapse" data-target="#demo">Collapsible</button>
-    <div id="demo" class="collapse">
-        Lorem ipsum dolor text....
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 </body>
 
 </html>
