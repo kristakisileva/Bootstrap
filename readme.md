@@ -6,7 +6,7 @@
 - Ielikt 6 bildes. No sākuma uz lielā ekrāna ir jābūt 3 bildēm horizontāli, 2 rindās. Samazinoties ekrānam, bildes rindā paliek mazāk, tās sakārtojas viena zem otras.
 - Izveidot tabulu, kurā cells aizņem vairāk kā vienu cell daļu, pielikt border.
 - Ielikt header ar navigāciju.
--!! Ielikt carousel elementu.
--  Izmantot opacity (var apskatīties bootsrap).
+-  Ielikt carousel elementu.
+- Izmantot opacity (var apskatīties bootsrap).
 -Izmantot collapse.
--!! Ieviet fonā bildi (vai kādu krāsas elementu) kurš atkārtojas.
+-Ieviet fonā bildi (vai kādu krāsas elementu) kurš atkārtojas.
